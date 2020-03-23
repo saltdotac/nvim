@@ -7,6 +7,7 @@ set encoding=utf-8
 
 let mapleader = " "
 set backspace=indent,eol,start
+set directory=/tmp//
 
 " Get off my lawn
 nnoremap <Left> :echoe "Use h"<CR>
