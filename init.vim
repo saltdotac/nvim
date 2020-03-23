@@ -6,3 +6,4 @@
 set encoding=utf-8
 
 let mapleader = " "
+set backspace=indent,eol,start
