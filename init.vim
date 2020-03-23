@@ -4,3 +4,5 @@
 " Last Modified Date: 2020.03.22
 
 set encoding=utf-8
+
+let mapleader = " "
