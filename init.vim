@@ -38,3 +38,4 @@ augroup vimrcEx
 augroup END
 
 set number
+set numberwidth=5
