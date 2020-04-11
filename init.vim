@@ -36,3 +36,5 @@ augroup vimrcEx
   autocmd BufRead,BufNewFile *.md set filetype=markdown
   autocmd BufRead,BufNewFile .{eslint,tslint,prettier}rc set filetype=json
 augroup END
+
+set number
