@@ -46,3 +46,5 @@ set expandtab
 set shiftround
 
 set nojoinspaces
+
+set list listchars=trail:·,precedes:«,extends:»,tab:▸\
