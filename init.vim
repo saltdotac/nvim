@@ -47,4 +47,11 @@ set shiftround
 
 set nojoinspaces
 
-set list listchars=trail:·,precedes:«,extends:»,tab:▸\
+set list listchars=precedes:«,extends:»,tab:▸\
+set listchars=space:·
+highlight WhiteSpaceBol ctermfg=7
+highlight WhiteSpaceMol ctermfg=0
+highlight WhiteSpaceEol ctermfg=1
+match WhiteSpaceMol / /
+2match WhiteSpaceBol /^ \+/
+3match WhiteSpaceEol /\s\+$/
