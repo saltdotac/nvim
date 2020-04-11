@@ -23,3 +23,12 @@ if (&t_Co > 2)
 endif
 
 filetype plugin indent on
+
+augroup vimrcEx
+  autocmd!
+
+  autocmd BufReadPost *
+    \ if &ft != 'gitcommit' && line("'\"") > 0 && line("'\"") <= line("$") |
+    \   exe "normal g`\"" |
+    \ endif
+augroup END
