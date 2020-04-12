@@ -55,3 +55,7 @@ highlight WhiteSpaceEol ctermfg=1
 match WhiteSpaceMol / /
 2match WhiteSpaceBol /^ \+/
 3match WhiteSpaceEol /\s\+$/
+
+if executable('rg')
+  set grepprg='rg'
+endif
