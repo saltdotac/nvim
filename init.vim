@@ -47,14 +47,11 @@ set shiftround
 
 set nojoinspaces
 
-set list listchars=precedes:«,extends:»,tab:▸\
-set listchars=space:·
-highlight WhiteSpaceBol ctermfg=7
+set list listchars=precedes:«,extends:»,space:·,tab:▸\
+highlight WhiteSpaceBol ctermfg=8
 highlight WhiteSpaceMol ctermfg=0
-highlight WhiteSpaceEol ctermfg=1
-match WhiteSpaceMol / /
-2match WhiteSpaceBol /^ \+/
-3match WhiteSpaceEol /\s\+$/
+match WhiteSpaceBol /\s/
+2match WhiteSpaceMol /\S\zs\s\ze\S/
 
 if executable('rg')
   set grepprg='rg'
