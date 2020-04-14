@@ -54,5 +54,5 @@ match WhiteSpaceBol /\s/
 2match WhiteSpaceMol /\S\zs\s\ze\S/
 
 if executable('rg')
-  set grepprg='rg'
+  set grepprg=rg\ --smart-case\ --no-heading
 endif
