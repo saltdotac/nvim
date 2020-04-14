@@ -55,4 +55,8 @@ match WhiteSpaceBol /\s/
 
 if executable('rg')
   set grepprg=rg\ --smart-case\ --no-heading
+
+  if executable('fzf')
+    let $FZF_DEFAULT_COMMAND = 'rg --smart-case --files-with-matches --hidden'
+  endif
 endif
