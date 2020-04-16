@@ -60,3 +60,5 @@ if executable('rg')
     let $FZF_DEFAULT_COMMAND = 'rg --smart-case --files-with-matches --hidden'
   endif
 endif
+
+set wildmode=list:longest,full
