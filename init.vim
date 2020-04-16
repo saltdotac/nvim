@@ -73,3 +73,5 @@ function! InsertTabWrapper()
 endfunction
 inoremap <Tab> <C-r>=InsertTabWrapper()<CR>
 inoremap <S-Tab> <C-n>
+
+nnoremap <Leader><Leader> <C-^>
