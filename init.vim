@@ -51,10 +51,13 @@ set smartindent
 set nojoinspaces
 
 set list listchars=precedes:«,extends:»,space:·,tab:▸\
-highlight WhiteSpaceBol ctermfg=8
-highlight WhiteSpaceMol ctermfg=0
-match WhiteSpaceBol /\s/
-2match WhiteSpaceMol /\S\zs\s\ze\S/
+
+augroup WhiteSpaceHighlight
+  autocmd!
+  highlight WhiteSpaceBol ctermfg=8
+  highlight WhiteSpaceMol ctermfg=0
+  autocmd VimEnter,Winenter * match WhiteSpaceBol /\s/ | 2match WhiteSpaceMol /\S\zs\s\ze\S/
+augroup END
 
 if executable('rg')
   set grepprg=rg\ --smart-case\ --no-heading
