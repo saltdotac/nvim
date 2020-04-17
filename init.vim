@@ -80,3 +80,5 @@ inoremap <S-Tab> <C-n>
 nnoremap <Leader><Leader> <C-^>
 
 let g:html_indent_inctags = "p"
+
+set splitright
