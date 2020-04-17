@@ -45,6 +45,9 @@ set shiftwidth=2
 set expandtab
 set shiftround
 
+set autoindent
+set smartindent
+
 set nojoinspaces
 
 set list listchars=precedes:«,extends:»,space:·,tab:▸\
