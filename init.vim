@@ -101,3 +101,8 @@ augroup filetype_markdown
 augroup END
 
 set diffopt+=vertical
+
+augroup vimrc_help
+  autocmd!
+  autocmd BufEnter *.txt if &buftype == 'help' | wincmd L | endif
+augroup END
