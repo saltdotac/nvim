@@ -99,3 +99,5 @@ augroup filetype_markdown
   autocmd BufRead,BufNewFile *.md setlocal complete+=kspell
   " TODO Add thesaurus plugin
 augroup END
+
+set diffopt+=vertical
