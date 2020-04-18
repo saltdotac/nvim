@@ -39,6 +39,17 @@ augroup END
 
 set number
 set numberwidth=5
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave,WinEnter *
+        \ if &number |
+        \   set relativenumber |
+        \ endif
+  autocmd BufLeave,FocusLost,InsertEnter,WinLeave *
+        \ if &number |
+        \   set norelativenumber |
+        \ endif
+augroup END
 
 set tabstop=2
 set shiftwidth=2
