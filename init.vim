@@ -119,3 +119,5 @@ augroup vimrc_help
 augroup END
 
 nnoremap x "_x
+
+nnoremap <Leader>/<Esc> :let @/=""<CR>:<Esc>
