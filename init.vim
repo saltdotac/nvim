@@ -102,6 +102,8 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
+vnoremap y "+y
+
 set spellfile=$XDG_CONFIG_HOME/nvim/.vim-spell-en.utf-8.add
 
 augroup filetype_markdown
