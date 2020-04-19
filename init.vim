@@ -123,6 +123,11 @@ nnoremap x "_x
 nnoremap <Leader>/<Esc> :let @/=""<CR>:<Esc>
 
 packadd minpac
+
+if !exists('*minpac#init')
+  finish
+endif
+
 call minpac#init()
 
 call minpac#add('k-takata/minpac', {'type': 'opt'})
