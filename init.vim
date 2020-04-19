@@ -121,3 +121,8 @@ augroup END
 nnoremap x "_x
 
 nnoremap <Leader>/<Esc> :let @/=""<CR>:<Esc>
+
+packadd minpac
+call minpac#init()
+
+call minpac#add('k-takata/minpac', {'type': 'opt'})
