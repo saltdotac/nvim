@@ -146,7 +146,7 @@ augroup END
 
 nnoremap x "_x
 
-nnoremap <Leader>/<Esc> :let @/=""<CR>:<Esc>
+nnoremap <silent> <Leader>/<Esc> :let @/=""<CR>:<Esc>
 
 packadd minpac
 
