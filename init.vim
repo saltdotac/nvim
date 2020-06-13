@@ -148,6 +148,8 @@ nnoremap x "_x
 
 nnoremap <silent> <Leader>/<Esc> :let @/=""<CR>:<Esc>
 
+set cursorline
+
 packadd minpac
 
 if !exists('*minpac#init')
