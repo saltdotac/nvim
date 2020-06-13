@@ -65,12 +65,6 @@ set nojoinspaces
 
 set list listchars=precedes:«,extends:»,space:·,tab:▸\
 
-augroup WhiteSpaceHighlight
-  autocmd!
-  highlight WhiteSpaceBol ctermfg=8
-  highlight WhiteSpaceMol ctermfg=0
-  autocmd VimEnter,Winenter * match WhiteSpaceBol /\s/ | 2match WhiteSpaceMol /\S\zs\s\ze\S/
-augroup END
 
 if executable('rg')
   set grepprg=rg\ --smart-case\ --no-heading
@@ -163,3 +157,10 @@ call minpac#add('norcalli/nvim-colorizer.lua')
 call minpac#add('gerw/vim-HiLinkTrace')
 set termguicolors
 colorscheme citylights
+
+augroup WhiteSpaceHighlight
+  autocmd!
+  highlight WhiteSpaceBol guifg=#41505E
+  highlight WhiteSpaceMol guifg=#1D252C
+  autocmd VimEnter,Winenter * match WhiteSpaceBol /\s/ | 2match WhiteSpaceMol /\S\zs\s\ze\S/
+augroup END
