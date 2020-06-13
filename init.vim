@@ -162,3 +162,4 @@ call minpac#add('k-takata/minpac', {'type': 'opt'})
 call minpac#add('norcalli/nvim-colorizer.lua')
 call minpac#add('gerw/vim-HiLinkTrace')
 set termguicolors
+colorscheme citylights
