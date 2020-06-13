@@ -12,6 +12,8 @@ set history=50
 set autowrite
 set nomodeline
 
+set shell=/usr/local/bin/zsh
+
 " Get off my lawn
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
